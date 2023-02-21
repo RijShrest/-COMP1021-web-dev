@@ -23,7 +23,7 @@ img, picture, sgv, video {
 
 /* Header CSS */
 
-header {
+/* header {
     width: 100%;
     position: sticky;
     top: 0;
@@ -42,16 +42,19 @@ nav ul {
 }
 
 nav ul li{
+    flex: 1 1 auto;
     line-height: 2.75em;
     letter-spacing: .4em;
+    padding: 0em 0em;
+    text-align: center;
 }
 
 nav ul li a {
     color: black;
     font-size: 1.25em;
     font-weight: 400;
-    padding: 1.5em 3em;
     text-decoration: none;
+    word-break: break-all
 }
 
 nav li a:hover {
@@ -65,12 +68,10 @@ nav li a:hover {
     font-size: 1em;
     font-weight: 900;
     letter-spacing: .2em;
-    text-align: center;
-    /* padding-left: 4%;
-    padding-right: 4%; */
-    width: 18%;
-    border-right: 2px solid black;
-}
+    text-align: left;
+    padding-left: 4em;
+    word-break: break-all;
+} */
 
 /* ---------- */
 
@@ -252,7 +253,6 @@ nav li a:hover {
     line-height: 1.5;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    /* list-style-image: url(../images/bullet-point_); */
     color: #232b2b;
 }
 
