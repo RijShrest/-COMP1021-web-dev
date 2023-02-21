@@ -19,6 +19,10 @@ img, picture, sgv, video {
     max-width: 100%;
 }
 
+strong {
+    font-weight: bold;
+}
+
 /* -------- */
 
 /* Header CSS */
@@ -228,12 +232,12 @@ nav li a:hover {
     /* text-transform: Uppercase; */
 }
 
-#content-main-introduction p a {
+#content-main-introduction p a, #content-main-my-projects a {
     color: gray;
     
 }
 
-#content-main-introduction p a:hover {
+#content-main-introduction p a:hover, #content-main-my-projects a:hover {
     color: gray;
     text-decoration: underline;
     font-weight: 900;
@@ -259,4 +263,19 @@ nav li a:hover {
 #content-main-work-experience, #content-main-my-projects, #content-main-more-about-me {
     width: 90%;
     margin: auto;
+}
+
+.list {
+    width: 80%;
+    margin: auto;
+}
+
+.list li {
+    font-size: 0.75em;
+}
+
+#content-main-my-projects p {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
 }
