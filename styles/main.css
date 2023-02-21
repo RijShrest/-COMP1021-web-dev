@@ -1,0 +1,253 @@
+/* Simple CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    background: whitesmoke;
+}
+
+/* html {
+    color-scheme: dark light;
+} */
+
+img, picture, sgv, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* -------- */
+
+/* Header CSS */
+
+header {
+    width: 100%;
+}
+
+nav {
+    background-color: whitesmoke;
+    overflow: hidden;
+    border: solid black;
+    /* position: fixed; */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    line-height: 2.75em;
+    letter-spacing: .4em;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 3.5em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: darkgrey;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.nav-logo {
+    float: left;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: .2em;
+    text-align: center;
+    /* padding-left: 4%;
+    padding-right: 4%; */
+    width: 18%;
+    border-right: 2px solid black;
+}
+
+/* ---------- */
+
+/* Body CSS */
+
+.content {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+
+    /* border: 3px solid cyan; */
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.content hr {
+    width: 75%;
+    margin: auto;
+}
+
+.content-info-sidebar, .content-main {
+    border: 2px solid greenyellow;
+}
+
+.content-info-sidebar {
+    display: block;
+    width: 18%;
+    position: relative;
+    margin-top: 1%;
+}
+
+.content-main-indent {
+    width: 95%;
+    margin: auto;
+}
+
+#content-navigation, #content-info-sidebar-socials, #content-info-sidebar-newsletter {
+    text-align: center;
+    padding: 4% 2%;
+
+    /* border: 2px solid crimson; */
+}
+
+#content-navigation p {
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: .25em;
+    color: #232b2b;
+}
+
+#content-navigation li, #content-navigation li a {
+    list-style-type: none;
+    color: #353839;
+    font-size: 1em;
+    letter-spacing: 0.075em;
+    line-height: 2;
+}
+
+#content-navigation li a:hover {
+    color: darkgrey;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.content-info-sidebar-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+#content-info-sidebar-socials p, #content-info-sidebar-newsletter p{
+    padding: 0.25em;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: .15em;
+    color: #232b2b;
+}
+
+.content-info-sidebar-socials-logo {
+    display: flex;
+    padding: 2px 10px;
+    justify-content: center;
+}
+
+.content-info-sidebar-socials-logo a {
+    padding: 2px 8px;
+}
+
+.content-info-sidebar-socials-logo a img {
+    width: 2.25em;
+    height: 2.25em;
+}
+
+#content-info-sidebar-newsletter input {
+    width: 100%;
+    border: 1px solid #232b2b;
+    border-radius: 5px;
+    letter-spacing: 0.1em;
+    padding: 0.2em 0.4em;
+}
+
+#content-info-sidebar-newsletter #footer-subscribe-button {
+    background-color: #e7e7e7;
+    color: black;
+    border: 2px solid darkgray;
+    margin: 0.5em;
+    padding: 2px 4px;
+    width: 70%;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+#content-info-sidebar-newsletter #footer-subscribe-button:hover {
+    background-color: lightgray;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.22), 0 15px 30px 0 rgba(0,0,0,0.16);
+    letter-spacing: .25em;
+    font-weight: 700;
+    width: 80%;
+}
+
+.content-main {
+    width: 82%;
+}
+
+.content-main > div {
+    width: 99%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    /* border: 3px solid black;
+    border-radius: 22px; */
+}
+
+#content-main-introduction p {
+    color: #353839;
+    font-size: 2.75em;
+    padding: 0.5em;
+    line-height: 1.25;
+    letter-spacing: 0.2em;
+    text-align: justify;
+    /* text-justify: inter-word; */
+    /* text-transform: Uppercase; */
+}
+
+#content-main-introduction p a {
+    color: gray;
+    
+}
+
+#content-main-introduction p a:hover {
+    color: gray;
+    text-decoration: underline;
+    font-weight: 900;
+    letter-spacing: 0.202em;
+}
+
+.content-main h1 {
+    font-size: 2.5em;
+    margin: 0.15em;
+    text-align: center;
+    color: #0e1111;
+}
+
+.content-main ul, .content-main p {
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    /* list-style-image: url(../images/bullet-point_); */
+    color: #232b2b;
+}
+
+#content-main-work-experience, #content-main-my-projects, #content-main-more-about-me {
+    width: 90%;
+    margin: auto;
+}

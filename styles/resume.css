@@ -1,0 +1,122 @@
+/* Simple CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* ---------- */
+
+.main-resume {
+    display: block;
+    width: 75%;
+    margin: auto;
+    padding: 5px 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 33px;
+    background-color: whitesmoke;
+    border: 4px solid black;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    padding: 0.2em;
+    font-weight:900;
+    color: #848884;
+}
+
+h2 {
+    display: block;
+    font-size: 1.25em;
+    letter-spacing: 0.07em;
+    padding: 0.15em;
+    font-weight: 600;
+    color: #808080;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.main-resume-section {
+    /* padding: 0.25em; */
+    text-align: justify;
+    text-justify: inter-word;
+    width: 80%;
+    margin: auto;
+}
+
+.main-resume-section p, ul {
+    width: 90%;
+    margin: auto;
+    line-height: 1.75;
+}
+
+.main-resume-section p {
+    padding: 1.5% 0%;
+}
+
+.main-resume-section-indented-p {
+    padding: 0 0 !important;
+}
+
+.main-resume a {
+    color: gray;
+    text-decoration: none;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 85%;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+table th, tr, td {
+    border-color:black; 
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    padding: 5px 5px;
+}
+
+#education-table th {
+    background-color:#A6A6A6;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#education-table tr {
+    background-color:#D9D9D9;
+}
+
+.technical-skills-table * {
+    text-align: center;
+    background-color: #D9D9D9;
+    border-color:#D9D9D9;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.technical-skills-table td:first-child {
+    border-left: 2px solid black;
+}
+
+.technical-skills-table td:last-child {
+    border-right: 2px solid black;
+}
+
+#download-resume-pdf {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* .list {
+    list-style-type: circle;
+} */
