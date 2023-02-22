@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font: inherit;
+    font-family: cursive;
 }
 
 /* ---------- */
@@ -65,13 +66,22 @@ hr {
     margin: auto;
 }
 
+.sub-projects-indent {
+    width: 90%;
+    margin: auto;
+    font-size: 1.25em;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+}
+
 .sub-projects-link {
     text-align: center;
     letter-spacing: 0.15em;
+    font-size: 1.15em;
     /* font-weight: 600; */
 }
 
-.sub-projects-link a {
+.sub-projects-link a{
     color: #353839;
     font-size: 1em;
     letter-spacing: 0.075em;
