@@ -51,7 +51,7 @@ strong {
     margin: auto;
 }
 
-.main-resume-section p, ul {
+.main-resume-section p, .main-resume-section ul {
     width: 90%;
     margin: auto;
     line-height: 1.75;
