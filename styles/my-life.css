@@ -36,7 +36,7 @@ img {
     border: 2px solid #353839;
 }
 
-#image-caption {
+p.image-caption {
     text-align: center;
     margin: 0;
     padding: 0;

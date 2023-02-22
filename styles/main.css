@@ -234,3 +234,7 @@ strong {
     font-size: 1.25em;
     font-weight: 600;
 }
+
+#content-main-work-experience h2 {
+    font-size: 1.1em;
+}
