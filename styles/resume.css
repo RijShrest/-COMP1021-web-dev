@@ -1,12 +1,4 @@
-/* Simple CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    font-family: cursive;
-}
-
-/* ---------- */
+/* Resume CSS */
 
 .main-resume {
     display: block;
@@ -117,7 +109,3 @@ table th, tr, td {
     text-align: center;
     font-size: 1.1em;
 }
-
-/* .list {
-    list-style-type: circle;
-} */

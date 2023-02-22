@@ -1,12 +1,4 @@
-/* Simple CSS Reset */
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    font-family: cursive;
-}
-
-/* ---------- */
+/* Project CSS */
 
 .all-projects {
     display: block;
