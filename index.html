@@ -1,155 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
     <title>Personal Website</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
+
 <body>
-    <!-- Nav Bar -->
     <header>
-        <nav>
-            <ul>
-                <li class="nav-logo"> Rijul Shrestha </li>
-                
-                <li><a href="./index.html"> Home</a></li>
-                <li><a href="./pages/my-life.html"> My Life</a></li>
-                <li><a href="./pages/resume.html"> My Resume</a></li>
-                <li><a href="./pages/contact.html"> Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-solid fa-code"></i>
+                        Rijul Shrestha
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item px-3">
+                                <button type="button" class="nav-link btn btn-light" aria-current="page" id="home-btn"
+                                    onclick="homeClick()">
+                                    Home
+                                </button>
+                            </li>
+                            <li class="nav-item px-3">
+                                <button type="button" class="nav-link btn btn-light" aria-current="page" id="myLife-btn"
+                                    onclick="myLifeClick()">
+                                    My Life
+                                </button>
+                            </li>
+                            <li class="nav-item px-3">
+                                <button type="button" class="nav-link btn btn-light" aria-current="page"
+                                    id="myResume-btn" onclick="myResumeClick()">
+                                    My Resume
+                                </button>
+                            </li>
+                            <li class="nav-item px-3">
+                                <button type="button" class="nav-link btn btn-light active" aria-current="page"
+                                    id="myProject-btn" onclick="myProjectClick()">
+                                    My Project
+                                </button>
+                            </li>
+                            <li class="nav-item px-3">
+                                <button type="button" class="nav-link btn btn-light active" aria-current="page"
+                                    id="contact-btn" onclick="contactClick()">
+                                    Contact
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <div class="content">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-sm border text-center mt-2">
+                <div class="sticky-md-top">
+                    <div id="page-links">
 
-        <div class="content-info-sidebar">
-
-            <div id="content-navigation" class="content-main-indent">
-                <hr>
-
-                <!-- PAGE INDEX -->
-                <ul>
-                    <li><a href="./index.html#content-main-introduction">INTRODUCTION</a></li>
-                    <li><a href="./index.html#content-main-work-experience">WORK EXPERIENCE</a></li>
-                    <li><a href="./index.html#content-main-my-projects">MY PROJECTS</a></li>
-                    <li><a href="./index.html#content-main-more-about-me">MORE ABOUT ME</a></li>
-                </ul>
-
-                <hr>
-            </div>
-
-            <div class="content-info-sidebar-bottom">
-
-                <div id="content-info-sidebar-socials" class="content-main-indent content-info-sidebar-bottom">
-                    <hr>
-
-                    <p>FOLLOW ME ON MY SOCIALS</p>
-        
-                    <div class="content-info-sidebar-socials-logo">
-                        <a href="https://www.linkedin.com/in/rijul-shrestha/" target="_blank">
-                            <img src="../images/linkedin-logo.png" alt="Linked-In" title="Rijul Shrestha's LinkedIn">
-                        </a>
-                
-                        <a href="https://www.instagram.com/rijulshrestha/" target="_blank">
-                            <img src="../images/instagram-logo.png" alt="Instagram" title="Rijul Shrestha's Instagram">
-                        </a>
-                
-                        <a href="https://discord.com/users/658678377342828556" target="_blank">
-                            <img src="../images/discord-logo.png" alt="Discord" title="Rijul Shrestha's Discord">
-                        </a>
                     </div>
                     <hr>
-                </div>
+                    <div>
+                        <p>FOLLOW ME ON MY SOCIALS</p>
+                        <a class="no-decoration" href="https://www.linkedin.com/in/rijul-shrestha/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in fa-xl px-2" style="color: #232323;"></i>
+                        </a>
+                        <a class="no-decoration" href="https://www.instagram.com/rijulshrestha/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-xl px-2" style="color: #232323;"></i>
+                        </a>
+                        <a class="no-decoration" href="https://discord.com/users/658678377342828556" target="_blank">
+                            <i class="fa-brands fa-discord fa-xl px-2" style="color: #232323;"></i>
+                        </a>
+                    </div>
 
-                <div id="content-info-sidebar-newsletter" class="content-main-indent">
                     <hr>
-
-                    <p>SIGN UP TO MY WEEKLY NEWS LETTER</p>
-                    <input type="email" name="subscription-mail" id="footer-subscribtion-mail" placeholder="example@domain.com">
-                    <button id="footer-subscribe-button">Subscribe</button>
-
-                    <hr>
+                    <div>
+                        <form>
+                            <p>SIGN UP TO MY WEEKLY NEWS LETTER</p>
+                            <div class="px-3">
+                                <label for="subscriptionEmail" class="form-label">Email Address:</label>
+                                <input type="email" class="form-control" id="subscriptionEmail"
+                                    aria-describedby="emailHelp" placeholder="example@domain.com">
+                                <div id="emailHelp" class="form-text">Your email will be safe with me</div>
+                            </div>
+                            <button type="submit" class="btn btn-light btn-sm">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
 
+            <div class="col-10 mt-2" id="content-main">
+
+            </div>
         </div>
-
-        <div class="content-main">
-
-            <div class="round-box">
-
-            <div id="content-main-introduction">
-                <p class="content-main-indent">Hey!<br>I'm Rijul Shrestha.<br>A Computer Science student currently enrolled in The University of Leeds.<br></p>
-                <p class="content-main-indent">I'm really eager to learn / discover new things who and I'm passionate about coding, football, music and speed cubing. Check out my some of my <a href="https://open.spotify.com/user/9n8zmcatg8ylrj79qz8fcknhl" target="_blank" title="My Spotify Profile">Spotify</a> to find the music taste and my <a href="https://www.worldcubeassociation.org/persons/2018SHRE05" target="_blank" title="My World Cube Association Profile">Speed Cubing</a> statistics.</p>
-                <p class="content-main-indent">If you wanna get in touch send me a message or reach me via my socials from <a href="./pages/contact.html" title="Contact Page">here.</a></p>
-            </div>
-
-            <div id="content-main-work-experience">
-                <hr>
-                <h1 class="content-main-indent">MY WORK EXPERIENCE</h1>
-                <hr>
-
-                <ul class="content-main-indent">
-                    <li><h2>Rural Health and Education Service Trust - Kathmandu, Nepal (April 2020 - December 2021)</h2><p><strong>MIS Intern</strong></p></li>
-                    
-                    <li style="list-style-type: none">
-                        <ul class="list">
-                            <li>Maintain soft copies of data collection forms and supporting documentation and update in DBMS accessible to MIS team and partner organizations.</li>
-                            <li>Monitoring data errors, scrubbing for duplicate data and performing data cleaning and promptly reporting into GitHub about detected technical issues.</li>
-                            <li>Reviewing student's information for data deficiencies, correcting any incompatibilities.</li>
-                            <li>Generating charts and pivot tables for executive reports.</li>
-                        </ul>
-                    </li>
-
-                    <li><h2>The Original Bowling Co Limited (Hollywood Bowl) – Leeds, UK (Part-time) (December 2022 – Present)</h2><p><strong>Team Member (Arcade)</strong></p></li>
-                    
-                    <li style="list-style-type: none">
-                        <ul class="list">
-                            <li>Dealing and resolving any problem/complaints faced by the customer in a positive manner. </li>
-                            <li>Ability to handle multiple customers at the same time during peak hours.</li>
-                            <li>Handling any queries, the customer may have.</li>
-                            <li>Organizing and fixing minor faults in the arcade equipment.</li>
-                        </ul> 
-                    </li>
-                </ul>
-            </div>
-
-            <div id="content-main-my-projects">
-                <hr>
-                <h1 class="content-main-indent">MY PROJECTS</h1>
-                <hr>
-
-                <ul class="content-main-indent">
-                    <li>Conducted <strong>Extended Essay/Research Paper</strong> in the topic "Efficiency of inverted index for faster keyword search on a large volume of unstructured data." (Linux, Java, Lucene, Meili Search)</li>
-                    <li>Designed and programmed a <strong>Desktop Application</strong> named "Project Event Manager" to track/update project event deadlines and synchronize in Google calendar. Project work included requirement analysis, software designs, implementation, and deployment with user manuals. (Java, Java Swing, SQLite)</li>
-                    <li>Conceptualized and implemented a simple parachute game with multiple level of difficulties and scores. (Python, pygame)</li>
-                </ul>
-
-                <p>For more details and source codes click <a href="./pages/projects.html" title="My Projects">here.</a></p>
-
-            </div>
-
-            <div id="content-main-more-about-me">
-                <hr>
-                <h1 class="content-main-indent">MORE ABOUT ME</h1>
-                <hr>
-
-                <ul class="content-main-indent">
-                    <li>My fastest official speed cubing record for 3*3 is 24.04 seconds.</li>
-                    <li>My favorite genre of songs is alternative rock.</li>
-                    <li>I'm a hug fan of the football club Manchester City since I was a child.</li>
-                </ul>
-
-            </div>
-
-        </div>
-            
-        </div>
-
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d155d82b1c.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
