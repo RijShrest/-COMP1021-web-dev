@@ -1,35 +1,30 @@
-<div id="contact-message">
-    <p id="contact-message-title">Send me a message and I'll get back to you.</p>
+<div class="d-flex align-items-center justify-content-center">
+    <form class="row g-3 needs-validation" id="mesage-form" onsubmit="sendMessage">
+        <div class="col-md-4">
+            <label for="validationServer01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationServer01" placeholder="Rijul" required>
+        </div>
 
-    <div class="contact-message-element">
-        <label> FIRST NAME: </label>
-        <input type="text" id="f-name" name="first-name" placeholder="Rijul">
-    </div>
+        <div class="col-md-4">
+            <label for="validationServer02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationServer02" placeholder="Shrestha" required>
+        </div>
 
-    <div class="contact-message-element">
-        <label> LAST NAME: </label>
-        <input type="text" id="l-name" name="last-name" placeholder="Shrestha">
-    </div>
+        <div class="col-md-8">
+            <label for="validationServer03" class="form-label">Email</label>
+            <input type="email" class="form-control" id="validationServer03" placeholder="example@domain.com"
+                aria-describedby="validationServer03Feedback" required>
+            <div class="mb-8">
+                <label for="validationTextarea" class="form-label">Message</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Type your message here..."
+                    required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                </div>
+            </div>
 
-    <div class="contact-message-element">
-        <label> EMAIL ADDRESS: </label>
-        <input type="email" name="email-address" id="email-id" placeholder="example@domain.com">
-    </div>
-
-    <div class="contact-message-element">
-        <label> SUBJECT: </label>
-        <input type="text" name="subject" id="subject-id">
-    </div>
-
-    <div class="contact-message-element">
-        <!-- <label for="message"> MESSAGE: </label>
-        <br> -->
-        <textarea name="message" id="message-area" cols="45" rows="15" placeholder="Type your message here...">
-        </textarea>
-    </div>
-
-    <div class="contact-message-element">
-        <button>SEND</button>
-    </div>
-    
+            <div class="col-12">
+                <button class="btn btn-light" type="submit">Send Message</button>
+            </div>
+    </form>
 </div>

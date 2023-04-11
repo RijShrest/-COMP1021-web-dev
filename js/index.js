@@ -120,6 +120,17 @@ function clearActive() {
     });
 }
 
+function sendMessage() {
+    if ($("#message-from").checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+        alert("Message successfully sent");
+    } else {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+}
+
 
 function testClick() {
     clearActive();

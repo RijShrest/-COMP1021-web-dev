@@ -1,8 +1,32 @@
+/* Fonts for the website */
+* {
+    font-family: "Lucida Console", "Courier New", monospace;
+    /* font-family: "Times New Roman", Times, cursive; */
+}
+
 /* Used to remove underscore next to icons (Sidebar) */
 .no-decoration {
     text-decoration: none;
 }
 
-/* #sidebar-logo > a:hover {
-    
-} */
+/* Color and font style change for links */
+a {
+    color: #353839;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    color: black;
+    font-weight: 900;
+}
+
+/* Remove border from sidebar page links */
+.list-group-item {
+    border: none;
+}
+
+/* Removes styles form the element in a list */
+.no-list-style {
+    list-style-type: none;
+}
