@@ -30,3 +30,24 @@ a:hover {
 .no-list-style {
     list-style-type: none;
 }
+
+/* Align and center image of my-life.html */
+.img-fluid {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px solid #353839;
+}
+
+p.image-caption {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+}
+
+#date {
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
