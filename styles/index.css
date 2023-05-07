@@ -51,9 +51,3 @@ p.image-caption {
     font-size: 1.5em;
     letter-spacing: 0.2em;
 }
-
-/* Geo-location container */
-
-#geo-location-container {
-    color: black;
-}
