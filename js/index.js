@@ -5,7 +5,7 @@ if (typeof (Storage) !== "undefined") {
     alert("Local storage not supported...");
 }
 
-// Action during initial load
+// Action during initial load of the website
 $(document).ready(function () {
     loadPageLinks();
     homeClick();
@@ -13,10 +13,11 @@ $(document).ready(function () {
 });
 
 // Nav bar button actions
+
 function homeClick() {
-    clearActive();
-    loadHomeContent();
-    $("#home-btn").addClass("active");
+    clearActive(); // clear the active tag
+    loadHomeContent(); // load the content
+    $("#home-btn").addClass("active"); // add the active tag
 
     sessionStorage.setItem("currentPage", "home");
 }
@@ -121,6 +122,7 @@ function clearActive() {
     });
 }
 
+// When message is sent
 function sendMessage() {
     if ($("#message-from").checkValidity()) {
         event.preventDefault();
@@ -137,7 +139,7 @@ function testClick() {
     clearActive();
 }
 
-// Geo-location
+// Implementation of geo-location
 
 var x = document.getElementById("geo-location-container");
 
